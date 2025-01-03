@@ -13,37 +13,43 @@
             text-align: left;
             background-color: #f8ece5;
             color: #341600; 
-            max-width: 700px
         }
         header {
             background-color: #f8ece5;
             color: rgb(102, 54, 0);
-            padding: 5px 175px;
+            padding: 0px 175px;
             font-size: 2em;
             text-align: left;
-          
-            
         }
         main {
-            padding: 0px 175px; 
+            padding: 0px 175px;
             margin: auto;
             text-align: left;
+            display: flex;
+            align-items: flex-start;
+            gap: 200px; /* Space between text and video */
         }
-        
+        .video-container {
+            width: 100%; /* Ensure the width of the video is 100% of the container */
+            height: auto; /* Adjust the height automatically based on the width */
+        }
+        .text-container {
+            width: auto; /* Adjust the width of the text */
+        }
         footer {
-            text-align: left;
-            font-size: 0.9em;
+            padding: 0px 175px;
+            font-size: 0.75em;
             margin-top: 150px;
+            margin-left: 175px;
             color: #341600;
-            width: 100vw
+            width: 100vw;
         }
-        
         p {
             font-size: 1.2em;
             line-height: 1.2;
         }
         a {
-            color: #4d2000; 
+            color: #4d2000;
             text-decoration: underline;
         }
         a:hover {
@@ -51,18 +57,26 @@
             text-decoration: underline blue;
         }
     </style>
+</head>
 <body>
     <header>
-        <h1>Calvin Guerrero</h1>
+        <h1>Calvin<br>Guerrero</h1>
     </header>
     <main>
-        <p>My name is Calvin Guerrero, and I am a 3rd-year undergraduate student at the University of Chicago.</p>
-        <p>I am currently pursuing a Major in Computer Science and a Minor in Spanish.</p>
-        <p>Here, you will find all of my <a href="#projects">projects</a>, <a href="#socials">socials</a>, <a href="#hobbies">hobbies</a> and <a href="#resume">resume</a>.</p> 
-        
+        <!-- Text Content Section -->
+        <div class="text-container">
+            <p>My name is Calvin Guerrero, and I am a 3rd-year undergraduate student at the University of Chicago.</p>
+            <p>I am currently pursuing a Major in Computer Science and a Minor in Spanish.</p>
+            <p>Here, you will find all of my <a href="#projects">projects</a>, <a href="#socials">socials</a>, <a href="#hobbies">hobbies</a> and <a href="#resume">resume</a>.</p> 
+        </div>
+
+        <!-- Video Embed Section -->
+        <div class="video-container">
+            <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=2J_UFDLc0nw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </main>
     <footer>
-        <p>Calvin Guerrero, 2025. This website is my first html project! Check out my other <a href="#projects">projects</a></p>
+        <p>Calvin Guerrero, 2025. This website is my first HTML project! Check out my other <a href="#projects">projects</a></p>
     </footer>
 </body>
 </html>
