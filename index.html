@@ -9,13 +9,13 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            margin: 0 auto; /* Center the content horizontally */
-            max-width: 1440px; /* Set the maximum width for the content */
-            padding: 0 20px; /* Add padding for smaller screens */
+            margin: 0 auto;
+            max-width: 1440px;
+            padding: 0 20px;
             text-align: left;
             background-color: #f8ece5;
-            color: #341600; 
-            overflow-x: hidden; /* Prevent horizontal scrolling */
+            color: #341600;
+            overflow-x: hidden;
         }
         header {
             background-color: #f8ece5;
@@ -24,6 +24,27 @@
             font-size: 2em;
             text-align: left;
         }
+
+        /* Header container for text and image */
+        .header-container {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Space between text and image */
+        }
+
+        .header-container h1 {
+            margin: 0; /* Remove default margin */
+        }
+
+        .headshot-container img {
+            width: 100px; /* Set the size of the headshot */
+            height: 100px;
+            border-radius: 10%; /* Rounded corners */
+            object-fit: cover;
+            border: 2px solid #341600; /* Optional border */
+        }
+
+        /* Main content layout for text and video */
         main {
             padding: 0px 150px;
             margin: auto;
@@ -31,30 +52,19 @@
             display: flex;
             justify-content: space-between; /* Distribute space between text and video */
             align-items: flex-start;
-            gap: 150px; /* Adjust space between text and video */
+            gap: 50px; /* Adjust space between text and video */
         }
 
-        .header-container {
-            display: flex; /* Align items horizontally */
-            align-items: center; /* Vertically align image and text */
-            gap: 20px; /* Adjust spacing between the image and text */
-        }
-
-        .headshot {
-            width: 80px; /* Set the width of the headshot image */
-            height: 80px; /* Set the height of the headshot image */
-            border-radius: 50%; /* Make the image circular */
-            object-fit: cover; /* Ensure the image scales properly */
-        }
-        
         .video-container {
-            max-width: 560px; /* Limit the width of the video */
+            max-width: 560px;
             width: 100%;
-            height: auto; /* Adjust height based on width */
+            height: auto;
         }
+
         .text-container {
-            width: 70%; /* Adjust text width to 50% of the container */
+            width: 70%;
         }
+
         footer {
             padding: 0px 175px;
             font-size: 0.75em;
@@ -63,14 +73,17 @@
             color: #341600;
             width: 100vw;
         }
+
         p {
             font-size: 1.2em;
             line-height: 1.2;
         }
+
         a {
             color: #4d2000;
             text-decoration: underline;
         }
+
         a:hover {
             color: blue;
             text-decoration: underline blue;
@@ -79,17 +92,21 @@
 </head>
 <body>
     <header>
+        <!-- Header Container with Text and Headshot -->
         <div class="header-container">
-            <img src="headshot.png" alt="Calvin Guerrero Headshot" class="headshot">
             <h1>Calvin<br>Guerrero</h1>
+            <div class="headshot-container">
+                <img src="headshot.png" alt="Calvin Guerrero Headshot">
+            </div>
         </div>
     </header>
+
     <main>
-        <!-- Text Content Section -->
+        <!-- Text Section -->
         <div class="text-container">
             <p>My name is Calvin Guerrero, and I am a 3rd-year undergraduate student at the University of Chicago.</p>
             <p>I am currently pursuing a Major in Computer Science and a Minor in Spanish.</p>
-            <p>Here, you will find all of my <a href="/projects">projects</a>, <a href="/socials">socials</a>, <a href="/hobbies">hobbies</a> and <a href="/resume">resume</a>.</p> 
+            <p>Here, you will find all of my <a href="/projects">projects</a>, <a href="/socials">socials</a>, <a href="/hobbies">hobbies</a> and <a href="#resume">resume</a>.</p> 
         </div>
 
         <!-- Video Embed Section -->
@@ -97,6 +114,7 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/2J_UFDLc0nw?si=_f1kIZ-CmlM4FmEG" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </main>
+
     <footer>
         <p>Calvin Guerrero, 2025. This website is my first HTML project! Check out my other <a href="/projects">projects</a></p>
     </footer>
