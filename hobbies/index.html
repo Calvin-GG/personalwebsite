@@ -42,12 +42,23 @@
             width: 70%; /* Adjust text width to 50% of the container */
         }
         footer {
-            padding: 0px 175px;
+            padding: 20px 20px; /* Adjust padding for spacing */
             font-size: 0.75em;
             margin-top: 125px;
-            margin-left: 175px;
             color: #341600;
-            width: 100vw;
+            max-width: 1440px; /* Ensure footer matches the content width */
+            margin: auto; /* Center the footer */
+            background-color: #f8ece5;
+            text-align: center; /* Center-align text */
+        }
+
+        footer::before {
+            content: ""; /* Add an empty pseudo-element for the line */
+            display: block;
+            width: 1000px; /* Set the width of the line */
+            margin: 0 auto; /* Center the line */
+            border-top: 2px solid #341600; /* Style the dividing line */
+            margin-bottom: 10px; /* Add spacing between the line and footer text */
         }
         p {
             font-size: 1.2em;
@@ -70,7 +81,7 @@
     <main>
         <!-- Text Content Section -->
         <div class="text-container">
-            <p>TEST OF HOBBIES</p>
+            <p>I love to balance work and play, and have many hobbies! These include 3D Printing, Nerf Blasters, and Roller Skating.</p>
             
             
         </div>
