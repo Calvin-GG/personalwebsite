@@ -34,21 +34,22 @@
             gap: 150px; /* Adjust space between text and video */
         }
         
+        
         .video-container {
+            width: 30%;
+            aspect-ratio: 16 / 9;  /* ✅ Maintains correct video aspect ratio */
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 ratio */
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
         }
 
         .video-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
         }
+
 
         .text-container {
             width: 70%; /* Adjust text width to 50% of the container */
@@ -110,7 +111,7 @@
     <main>
         <!-- Text Content Section -->
         <div class="text-container">
-            <p>My name is Calvin Guerrero, and I am a 3rd-year undergraduate student at the University of Chicago.</p>
+            <p>My name is Calvin Guerrero, and I am a 4th-year undergraduate student at the University of Chicago.</p>
             <p>I am currently pursuing a Major in Computer Science and a Minor in Spanish.</p>
             <p>Here, you will find all of my <a href="/projects">projects</a>, <a href="/resume">resume</a>, <a href="/contact">contact information</a>, and <a href="/hobbies">hobbies</a>.</p> 
             <p>This website is a work in progress, and may change over time or have unfinished sections!</p>
