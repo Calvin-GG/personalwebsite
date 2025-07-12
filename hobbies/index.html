@@ -1,164 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Calvin Guerrero, a 4th year Computer Science major at the University of Chicago. Explore projects, socials, and resume.">
-    <title>Calvin Guerrero</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0 auto;
-            max-width: 1440px;
-            padding: 0 20px;
-            text-align: left;
-            background-color: #f8ece5;
-            color: #341600;
-            overflow-x: hidden;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Calvin Guerrero, a 3rd year Computer Science major at the University of Chicago. Explore projects, socials, and resume." />
+  <title>Calvin Guerrero</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0 auto;
+      max-width: 1440px;
+      padding: 0 20px;
+      text-align: left;
+      background-color: #f8ece5;
+      color: #341600;
+      overflow-x: hidden;
+    }
 
-        header {
-            background-color: #f8ece5;
-            color: rgb(102, 54, 0);
-            padding: 2px 150px;
-            font-size: 2em;
-            text-align: left;
-        }
+    header {
+      background-color: #f8ece5;
+      color: rgb(102, 54, 0);
+      padding: 2px 150px;
+      font-size: 2em;
+      text-align: left;
+    }
 
-        .subtitle {
-            font-size: 1.25em;
-            font-weight: 400;
-            margin-top: -10px;
-            margin-bottom: 30px;
-            color: #5c2c00;
-            padding: 0 150px;
-        }
+    .subtitle {
+      font-size: 1.25em;
+      font-weight: 400;
+      margin-top: -10px;
+      margin-bottom: 30px;
+      color: #5c2c00;
+      padding: 0 150px;
+    }
 
-        main {
-            padding: 0 150px;
-            margin: auto;
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            gap: 50px;
-        }
+    main {
+      padding: 0 150px;
+      margin: auto;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
 
-        .content-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 50px;
-            flex-wrap: wrap;
-        }
+    .content-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 50px;
+        flex-wrap: nowrap; /* ✅ forces side-by-side layout */
+    }
 
-        .text-container {
-            width: 50%;
-            min-width: 280px;
-        }
+    .text-container {
+      width: 50%;
+      min-width: 280px;
+    }
 
-        .image-container {
-            width: 100%;
-            max-width: 500px;
-            display: flex;
-            justify-content: center;
-        }
+    .image-container {
+      width: 50%;
+      min-width: 280px;
+      display: flex;
+      justify-content: center;
+    }
 
-        .image-container img {
-            width: 100%;
-            max-height: 400px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
+    .image-container img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
 
-        footer {
-            padding: 20px 20px;
-            font-size: 0.75em;
-            margin-top: 125px;
-            color: #341600;
-            max-width: 1440px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #f8ece5;
-            text-align: center;
-        }
+    p {
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
 
-        p {
-            font-size: 1.2em;
-            line-height: 1.5;
-        }
+    a {
+      color: #4d2030;
+      text-decoration: underline;
+    }
 
-        a {
-            color: #4d2030;
-            text-decoration: underline;
-        }
+    a:hover {
+      color: blue;
+      text-decoration: underline blue;
+    }
 
-        a:hover {
-            color: blue;
-            text-decoration: underline blue;
-        }
+    footer {
+      padding: 20px 20px;
+      font-size: 0.75em;
+      margin-top: 125px;
+      color: #341600;
+      max-width: 1440px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #f8ece5;
+      text-align: center;
+    }
 
-        @media (max-width: 768px) {
-            header {
-                padding: 20px;
-                font-size: 1.5em;
-                text-align: center;
-            }
+    @media (max-width: 768px) {
+      header {
+        padding: 20px;
+        font-size: 1.5em;
+        text-align: center;
+      }
 
-            .subtitle {
-                padding: 0 20px;
-                text-align: center;
-                font-size: 1em;
-            }
+      .subtitle {
+        padding: 0 20px;
+        text-align: center;
+        font-size: 1em;
+      }
 
-            main {
-                padding: 0 20px;
-                gap: 40px;
-            }
+      main {
+        padding: 0 20px;
+        gap: 40px;
+      }
 
-            .content-section {
-                flex-direction: column;
-                gap: 30px;
-            }
+      .content-section {
+        flex-direction: column;
+        gap: 30px;
+      }
 
-            .text-container, .image-container {
-                width: 100%;
-            }
+      .text-container,
+      .image-container {
+        width: 100%;
+      }
 
-            footer {
-                padding: 50px 20px;
-                font-size: 0.9em;
-            }
-        }
-    </style>
+      footer {
+        padding: 50px 20px;
+        font-size: 0.9em;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Hobbies</h1>
-    </header>
-    <p class="subtitle">A few things I enjoy outside of tech and school</p>
+  <header>
+    <h1>Hobbies</h1>
+  </header>
+  <p class="subtitle">A few things I enjoy outside of tech and school</p>
 
-    <main>
-        <!-- Hobbies Intro Section -->
-        <div class="content-section">
-            <div class="text-container">
-                <p>I love to balance work and play, and have many hobbies! These include 3D printing, Nerf blasters, and roller skating. This page is a work in progress, so expect more content in the future!</p>
-            </div>
-        </div>
+  <main>
+    <!-- Hobbies Intro Section -->
+    <div class="content-section">
+      <div class="text-container">
+        <p>
+          I love to balance work and play, and have many hobbies! These include
+          3D printing, Nerf blasters, and roller skating. This page is a work in
+          progress, so expect more content in the future!
+        </p>
+      </div>
+    </div>
 
-        <!-- 3D Printers Section -->
-        <div class="content-section">
-            <div class="text-container">
-                <p>These are my 3D printers — the Bambu Lab A1 Mini and P1S with AMS unit. They allow me to produce parts quickly and with high quality, and are a huge part of my creative process.</p>
-            </div>
-            <div class="image-container">
-                <img src="pictures/3d printing/printers.JPG" alt="3D Printers">
-            </div>
-        </div>
-    </main>
+    <!-- 3D Printers Section -->
+    <div class="content-section">
+      <div class="text-container">
+        <p>
+          These are my 3D printers — the Bambu Lab A1 Mini and P1S with AMS
+          unit. They allow me to produce parts quickly and with high quality,
+          and are a huge part of my creative process.
+        </p>
+      </div>
+      <div class="image-container">
+        <img src="pictures/3d printing/printers.JPG" alt="3D Printers" />
+      </div>
+    </div>
+  </main>
 
-    <footer>
-        <p>Calvin Guerrero, 2025. This website is my first HTML project! Check out my other <a href="/projects">projects</a>, or go to the <a href="/">homepage</a>.</p>
-    </footer>
+  <footer>
+    <p>
+      Calvin Guerrero, 2025. This website is my first HTML project! Check out my
+      other <a href="/projects">projects</a>, or go to the
+      <a href="/">homepage</a>.
+    </p>
+  </footer>
 </body>
 </html>
